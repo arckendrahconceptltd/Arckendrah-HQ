@@ -320,8 +320,7 @@
                 <h2>Syndicate Access & Inquiry</h2>
             </div>
             
-            <form name="trade-inquiry" method="POST" data-netlify="true" action="/">
-                <input type="hidden" name="form-name" value="trade-inquiry" />
+            <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
                 
                 <div class="form-group">
                     <label>Corporate / Entity Name</label>
@@ -516,6 +515,7 @@
         }
 
         // --- NETLIFY IDENTITY REDIRECT ---
+        // Leaving this intact so your admin portal login doesn't break.
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
                 if (!user) {
