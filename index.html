@@ -30,18 +30,20 @@
             transform: scale(1.1);
         }
 
-       /* FINAL LOGO OVERRIDE */
-.brand-link { overflow: visible !important; display: flex; align-items: center; }
+     /* ABSOLUTE LOGO OVERRIDE */
+.brand-link { 
+    display: flex !important; 
+    align-items: center !important; 
+    overflow: visible !important; 
+}
 
 .official-logo { 
-    height: 65px !important; 
+    height: 110px !important; 
     width: auto !important; 
-    object-fit: contain !important;
-    transform: scale(2.2) translateY(5px) !important; 
-    transform-origin: left top !important; 
-    margin-left: 20px !important;
-    position: relative; 
-    z-index: 100;
+    max-height: none !important; 
+    margin: -25px 0 !important; /* Allows it to overlap the navbar bounds without stretching it */
+    position: relative !important; 
+    z-index: 9999 !important; /* Forces it to the absolute top layer */
 }
         /* NAVIGATION STYLING */
         .glass-nav { 
