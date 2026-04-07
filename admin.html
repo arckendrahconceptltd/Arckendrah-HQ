@@ -24,7 +24,48 @@
         .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(249, 115, 22, 0.3); padding-bottom: 20px; margin-bottom: 40px; }
         .logo { font-size: 28px; font-weight: 800; font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; }
         .logo span { color: #f97316; }
-        .user-badge { background: rgba(15, 23, 42, 0.8); padding: 10px 20px; border-radius: 4px; font-size: 14px; border: 1px solid rgba(249, 115, 22, 0.3); font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 10px; box-shadow: 0 0 15px rgba(249, 115, 22, 0.1); }
+        /* Header Container */
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1px solid rgba(249, 115, 22, 0.3); 
+    padding-bottom: 20px; 
+    margin-bottom: 40px; 
+}
+
+/* Upgraded Image Logo Styling */
+.logo-img { 
+    height: 85px; /* Perfect height for an executive dashboard */
+    width: auto; 
+    object-fit: contain;
+    border-radius: 4px; /* Softens the sharp corners of the JPG */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds depth to the image */
+    transition: all 0.3s ease-in-out; /* Smooth animation timing */
+    cursor: pointer;
+}
+
+/* Institutional Hover Effect */
+.logo-img:hover {
+    box-shadow: 0 0 18px rgba(249, 115, 22, 0.3); /* Emits a subtle gold/orange glow to match your theme */
+    transform: translateY(-1px); /* Slight lift effect when hovered */
+}
+
+/* User Badge (Untouched - Your styling here was already perfect) */
+.user-badge { 
+    background: rgba(15, 23, 42, 0.8); 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    border: 1px solid rgba(249, 115, 22, 0.3); 
+    font-family: 'Orbitron', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.1); 
+}
 
         /* KPI Cards */
         .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
