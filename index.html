@@ -31,11 +31,18 @@
         }
 
         /* --- OFFICIAL LOGO OVERRIDE --- */
-        .brand-link { display: inline-flex; align-items: center; text-decoration: none; padding: 5px 0; }
-        .official-logo { height: 130px !important; max-height: none !important; width: auto !important; object-fit: contain !important; display: block; position: relative; z-index: 100; margin-top: 0px; margin-bottom: -20px; }
-        .official-logo:hover { box-shadow: 0 0 15px rgba(249, 115, 22, 0.4); transform: translateY(-1px); }
-        .footer-logo { height: 80px; } /* Slightly larger for the footer */
+        .brand-link { overflow: visible !important; display: flex; align-items: center; }
 
+.official-logo { 
+    height: 60px !important; 
+    width: auto !important; 
+    object-fit: contain !important;
+    transform: scale(2.0) !important; 
+    transform-origin: left center !important; 
+    margin-left: 15px !important;
+    position: relative; 
+    z-index: 100;
+}
         /* NAVIGATION STYLING */
         .glass-nav { 
             background: rgba(2, 6, 23, 0.95); 
