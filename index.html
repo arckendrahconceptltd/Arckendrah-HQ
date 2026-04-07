@@ -30,7 +30,7 @@
             transform: scale(1.1);
         }
 
-    /* THE NUDGE OVERRIDE */
+   /* THE GRAVITY OVERRIDE */
 .brand-link { 
     overflow: visible !important; 
     display: flex; 
@@ -38,10 +38,11 @@
 }
 
 .official-logo { 
-    height: 75px !important; 
+    height: 130px !important; 
     width: auto !important; 
     object-fit: contain !important;
-    transform: scale(1.8) translate(15px, 12px) !important; 
+    margin-top: 40px !important; /* Physically forces it down from the ceiling */
+    margin-bottom: -40px !important; /* Allows it to hang off the bottom of the navbar */
     position: relative; 
     z-index: 9999 !important;
 }
