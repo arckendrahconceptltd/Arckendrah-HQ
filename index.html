@@ -30,20 +30,20 @@
             transform: scale(1.1);
         }
 
-     /* ABSOLUTE LOGO OVERRIDE */
+    /* THE NUDGE OVERRIDE */
 .brand-link { 
-    display: flex !important; 
-    align-items: center !important; 
     overflow: visible !important; 
+    display: flex; 
+    align-items: center; 
 }
 
 .official-logo { 
-    height: 110px !important; 
+    height: 75px !important; 
     width: auto !important; 
-    max-height: none !important; 
-    margin: -25px 0 !important; /* Allows it to overlap the navbar bounds without stretching it */
-    position: relative !important; 
-    z-index: 9999 !important; /* Forces it to the absolute top layer */
+    object-fit: contain !important;
+    transform: scale(1.8) translate(15px, 12px) !important; 
+    position: relative; 
+    z-index: 9999 !important;
 }
         /* NAVIGATION STYLING */
         .glass-nav { 
